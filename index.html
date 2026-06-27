@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coffeeshop Screen Displays</title>
+<style>
+  html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#1d1109;color:#f3ead8;}
+  body{display:flex;flex-direction:column;align-items:center;gap:14px;padding:64px 32px;box-sizing:border-box;text-align:center;}
+  h1{font-size:30px;font-weight:600;margin:0;letter-spacing:.5px;}
+  p.sub{margin:0 0 28px;color:rgba(243,234,216,.6);max-width:560px;line-height:1.5;}
+  .sets{display:flex;flex-direction:column;gap:20px;width:100%;max-width:620px;}
+  .set{background:rgba(243,234,216,.06);border:1px solid rgba(243,234,216,.14);border-radius:16px;padding:24px 28px;text-align:left;}
+  .set h2{margin:0 0 4px;font-size:20px;font-weight:600;}
+  .set .desc{margin:0 0 18px;font-size:14px;color:rgba(243,234,216,.55);}
+  .links{display:flex;gap:14px;flex-wrap:wrap;}
+  a.btn{flex:1 1 0;min-width:140px;text-align:center;text-decoration:none;color:#1d1109;background:#f3ead8;padding:16px 22px;border-radius:10px;font-size:17px;font-weight:600;transition:transform .15s ease;}
+  a.btn span{display:block;font-size:12px;font-weight:400;color:#7a4a24;margin-top:2px;}
+  a.btn:hover{transform:translateY(-2px);}
+  footer{margin-top:36px;font-size:13px;color:rgba(243,234,216,.4);max-width:560px;line-height:1.6;}
+  code{background:rgba(243,234,216,.12);padding:1px 6px;border-radius:5px;font-size:12px;}
+</style>
+</head>
+<body>
+  <h1>Coffeeshop Screen Displays</h1>
+  <p class="sub">Each set has a left and right page. Open each on its matching TV — together they read as one continuous display across both screens.</p>
+
+  <div class="sets">
+
+    <!-- ===== DISPLAY SET ===== -->
+    <div class="set">
+      <h2>Common Grounds</h2>
+      <p class="desc">Church logo + “Common Grounds” wordmark on an animated coffee background.</p>
+      <div class="links">
+        <a class="btn" href="common-grounds/left.html">Left Screen<span>logo</span></a>
+        <a class="btn" href="common-grounds/right.html">Right Screen<span>“Common Grounds”</span></a>
+      </div>
+    </div>
+
+    <!-- To add a new set: duplicate the folder, then copy the block above and
+         change the folder name + titles. -->
+
+  </div>
+
+  <footer>
+    Hosted on GitHub Pages. To add another set, duplicate a folder (e.g. <code>common-grounds</code> → <code>fall-special</code>), edit its <code>left.html</code> / <code>right.html</code>, and add a matching card to this page. See <code>README.md</code>.
+  </footer>
+</body>
+</html>
